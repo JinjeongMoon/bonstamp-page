@@ -487,5 +487,25 @@ body {
 @media (max-width: 520px){
   .store-btn{ min-width: 100%; }
 }
+.brand-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;            /* 로고-텍스트 간격 */
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;    /* 기존 톤에 맞춰 필요시 조절 */
+}
+
+.logo-img{
+  width: 24px;         /* 로고 크기 */
+  height: 24px;
+  display: block;
+}
+
+.brand-link:focus-visible{
+  outline: 3px solid var(--brand, #5B6CFF); /* 키컬러 변수 있으면 자동 사용 */
+  outline-offset: 4px;
+  border-radius: 8px;
+}
 
 }
