@@ -463,13 +463,13 @@ body {
     flex-direction: row;
   }
   .h-card { flex: 1; }
-}
 /* App Store / Google Play buttons */
 .store-row{
   display:flex;
   justify-content:center;
-  gap:12px;
-  margin-top:14px;
+  column-gap:24px;
+  row-gap:16px;
+  margin-top:16px;
   flex-wrap:wrap;
 }
 
@@ -486,4 +486,6 @@ body {
 
 @media (max-width: 520px){
   .store-btn{ min-width: 100%; }
+}
+
 }
