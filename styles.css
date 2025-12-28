@@ -463,27 +463,55 @@ body {
     flex-direction: row;
   }
   .h-card { flex: 1; }
-/* App Store / Google Play buttons */
-.store-row{
-  display:flex;
-  justify-content:center;
-  column-gap:24px;
-  row-gap:16px;
-  margin-top:16px;
-  flex-wrap:wrap;
+ }
+.app-download-area {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
 }
 
-.store-btn{
-  min-width:240px;
-  padding:14px 18px; /* 기존 cta-primary보다 살짝 '스토어 버튼' 느낌 */
+.app-download-area h3 {
+  font-size: 20px;
+  color: var(--text-head);
+  margin-bottom: 20px;
 }
 
-.store-icon{
-  margin-right:10px;
-  font-size:18px;
-  line-height:1;
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 520px){
-  .store-btn{ min-width: 100%; }
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s;
+  min-width: 160px;
+}
+
+.store-btn .store-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.store-btn.google {
+  background: #000;
+  color: #fff;
+}
+
+.store-btn.apple {
+  background: #000;
+  color: #fff;
+}
+
+.store-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
