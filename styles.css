@@ -464,3 +464,26 @@ body {
   }
   .h-card { flex: 1; }
 }
+/* App Store / Google Play buttons */
+.store-row{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:14px;
+  flex-wrap:wrap;
+}
+
+.store-btn{
+  min-width:240px;
+  padding:14px 18px; /* 기존 cta-primary보다 살짝 '스토어 버튼' 느낌 */
+}
+
+.store-icon{
+  margin-right:10px;
+  font-size:18px;
+  line-height:1;
+}
+
+@media (max-width: 520px){
+  .store-btn{ min-width: 100%; }
+}
