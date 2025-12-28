@@ -52,6 +52,14 @@ body {
   font-size: 20px;
   color: var(--primary);
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 24px;
+  width: auto;
 }
 
 .site-nav {
@@ -463,7 +471,8 @@ body {
     flex-direction: row;
   }
   .h-card { flex: 1; }
- }
+}
+
 .app-download-area {
   margin-top: 60px;
   padding-top: 40px;
